@@ -31,3 +31,11 @@
     ```
     git reflog show [local branch name]
     ```
+
+5. **当要从本地仓库向远程仓库里传输图片时**
+    ```
+    1. 先将图片提交到本地仓库
+    2. 使用LFS将本地的图片当作大文件推送到远程仓库  git lfs push [remote repo name] [local branch name]
+    3. 推送本地提交到远程仓库
+    （如果不这样做的话，远程仓库的hook会阻止本地提交的推送）
+    ```
